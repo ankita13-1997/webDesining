@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="device-width">
+     <title>simple html form</title>
+     <link rel ="stylesheet" href="../css/simple_form.css">
+
+
+ </head>
+
+ <body>
+     <form>
+         <header class="headerContainer"><h1>Simple way to take input in the form</h1></header>
+         <div>
+             <label for="text">FIRST NAME</label>
+             <input type="text" id="text" name="text">
+             <error-output class="text-error" for="text"></error-output>
+         </div>
+
+         <div>
+            <label for="text">LAST NAME</label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+
+        <div>
+            <label for="pwd">PASSWORD</label>
+            <input type="password" id="pwd" name="pwd">
+            <error-pwd class="pwd-error" for="pwd"></error-pwd>
+        </div>
+
+        <div>
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" name="email">
+            <error-email class="mail-error" for="email"></error-pwd>
+            
+        </div>
+
+        <div>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url">
+            <error-email class="url-error" for="url"></error-pwd>
+            
+        </div>
+
+        <div>
+            <label for="number">EMPLOYE-ID</label>
+            <input type="number" id="number" name="number">
+            <error-email class="id-error" for="number"></error-pwd>
+            
+        </div>
+
+        <div>
+            <label for="tel">CONTACT NUMBER</label>
+            <input type="tel" id="tel" name="tel">
+            <error-email class="tel-error" for="tel"></error-pwd>
+            
+        </div>
+
+       
+
+
+        <div class = "nativeDateTimePicker">
+            <label for="party">DATE OF BIRTH</label>
+            <input type="datetime-local" id="party" name="bday">
+            <span class="validity"></span>
+
+        </div>
+
+            <div>
+                <label for="salary">CHOOSE YOUR SALARYS</label>
+                <input type="range" id="salary" name="salary" min="30000" max="50000" step="100" value="40000">
+                <output class="salary-output" for="salary">40000</output>
+               
+                
+            </div>
+            <div>
+             <button>SUBMIT</button>
+            </div>
+        </div>
+     </form>
+ </body>
+</html>
